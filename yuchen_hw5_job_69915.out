@@ -1,0 +1,35 @@
+Hostname: cn039
+Uptime:  17:18:30 up 131 days, 19:03,  0 users,  load average: 23.97, 24.77, 30.02
+Disk Space Usage:
+Filesystem                         Size  Used Avail Use% Mounted on
+devtmpfs                           4.0M     0  4.0M   0% /dev
+tmpfs                              126G   42G   84G  34% /dev/shm
+tmpfs                               51G  373M   50G   1% /run
+/dev/nvme0n1p3                      63G  5.0G   55G   9% /
+/dev/nvme0n1p2                     974M  310M  597M  35% /boot
+/dev/nvme0n1p5                     125G  4.9G  114G   5% /var
+/dev/nvme0n1p6                     1.6T   56K  1.5T   1% /local
+/dev/nvme0n1p1                     599M  7.0M  592M   2% /boot/efi
+cobbler:/share/common              261G  177G   71G  72% /share/nfs-cobbler
+aurora2:/fast/sw                   5.2T  4.4T  599G  89% /sw_aurora2
+cosmos-sw:/sw                      7.0T  1.1T  5.6T  16% /sw
+fs2-hep:/disk                       55T   29T   24T  56% /projects/hep/nobackup
+fs7-hep.int:/disk                  107T   48T   60T  45% /projects/hep/fs7
+fs8-hep.int:/disk                  350T   69T  282T  20% /projects/hep/fs8
+fs9-hep.int:/disk                  350T  256T   94T  74% /projects/hep/fs9
+fs10-hep.int:/disk                 350T  1.8T  348T   1% /projects/hep/fs10
+fs11-hep.int:/disk                 568T  170T  399T  30% /projects/hep/fs11
+fs12-hep.int:/disk                 568T  9.7T  558T   2% /projects/hep/fs12
+fs-eko1:/disk                       73T   63T   11T  87% /projects/eko/fs1
+fs-eko4:/disk                       73T   68T  1.6T  98% /projects/eko/fs4-backup
+fs3-astro:/disk                     73T   72T  817G  99% /projects/astro3
+fs-eko5:/disk                       73T   32T   38T  46% /projects/eko/fs5
+fs2-merge:/disk                     37T   17T   20T  47% /projects/merge2/nobackup
+fs4-maxiv:/gpfs/offline1/staff      12P  3.1P  8.4P  27% /projects/maxiv/staff
+fs4-maxiv:/gpfs/offline1/visitors   12P  3.1P  8.4P  27% /projects/maxiv/visitors
+fs-eko2:/disk                       73T   67T  2.8T  97% /projects/eko/fs2
+cosmos-nateko2:/disk               236T  146T   79T  66% /projects/eko/fs6
+home                               257T   71T  186T  28% /home
+lunarc                             2.4P  1.2P  1.3P  48% /lunarc
+Number of entries in /etc directory: 273
+Number of entries in /usr/bin directory: 1673

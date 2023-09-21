@@ -1,0 +1,535 @@
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ sbatch yuchenhomework5.sh
+[?2004lsbatch: error: You must supply a time (-t ..).
+sbatch: error: Batch job submission failed: Time limit specification required, but not provided
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ sbath[K[K[K[K[Kpwd
+[?2004l/home/yuyang/git/homework5yuchen
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ code yuchenhomework5sh[K[K.sh
+[?2004lkyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ code yuchenhomework5.sh
+[?2004lkyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ code yuchenhomework5.shpwd[Ksbatch yuchenhomework5.sh
+[?2004lsbatch: error: You must supply a time (-t ..).
+sbatch: error: Batch job submission failed: Time limit specification required, but not provided
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ sbatch -t 1:00:00 yuchenhomework5.sh
+[?2004lSubmitted batch job 69642
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ q[Ksqueue
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             67806  gpua100i SO33_441     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67807  gpua100i SO51_551     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             60489  gpua100i SO257_16     hlhh  R 6-23:58:33      1 cg18
+             69633    gpua40     lhpc an4255da  R       6:21      1 cg01
+             67805   gpua40i SO19_331     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67769   gpua40i  SO3_111     hlhh  R 3-14:11:26      1 cg16
+             67768   gpua40i SO17_334     hlhh  R 4-00:49:06      1 cg15
+             67767   gpua40i SO17_223     hlhh  R 4-23:33:55      1 cg17
+             68702      lu32 run.auro     vivy  R 1-19:44:12      6 cn[196-201]
+             69628      lu32 _interac     vivy  R      16:51      1 cn202
+             69140      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69141      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69142      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69143      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69147      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69149      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69150      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69202      lu48 guess_ap    veiko PD       0:00      1 (Dependency)
+             69200      lu48 guess_ap    veiko PD       0:00      1 (Dependency)
+             69198      lu48 guess_ap    veiko PD       0:00      1 (Dependency)
+             69506      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69504      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69184      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             66009      lu48 Hst3HSPS    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66010      lu48 Hst3HSPS    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66011      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66012      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66013      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             67909      lu48 7LUbtzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67911      lu48  c1LAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67912      lu48  c1LA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67913      lu48 c2HLAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67914      lu48 c2HLA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67915      lu48 c2DLAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67916      lu48 c2DLA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67917      lu48 c2LbtzNA maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67918      lu48 c2LbtzNA maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67946      lu48 c6L5tzAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67947      lu48 c6L5tzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67948      lu48 c6L9tzAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67949      lu48 c6L9tzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67952      lu48  c7LWHAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67954      lu48  c7LWHA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67955      lu48  c7LWUAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67956      lu48   c7LUA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67957      lu48   c7LMAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67958      lu48   c7LMA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67959      lu48    c9LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67960      lu48    c9LA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67961      lu48   c11LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67962      lu48   c11LA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67963      lu48   c12LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67964      lu48   c12IA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68139      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68140      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68141      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68142      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68143      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68124      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68125      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68126      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68127      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68128      lu48 PCPS_H_3  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68129      lu48 PCPS_H_4  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68130      lu48 PCPS_H_5  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68149      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             68150      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             68787      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68790      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68792      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69480      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69481      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69482      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69483      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69484      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69485      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69486      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69489      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69490      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69491      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69493      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69494      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69488      lu48 _interac gmonteil  R   15:23:53      1 cn070
+             69581      lu48 _interac gmonteil  R    9:01:50      1 cn162
+             69151      lu48     Cool an8583so  R 1-00:28:00      3 cn[154,156-157]
+             69159      lu48 f60hires   agertz  R 1-00:15:31      2 cn[006,008]
+             69638      lu48  run_EAP    dhard  R       1:56      1 cn106
+             69201      lu48    guess    veiko  R   23:14:50      1 cn039
+             69199      lu48    guess    veiko  R   23:14:57      1 cn126
+             69197      lu48    guess    veiko  R   23:15:13      1 cn179
+             69606      lu48 out_treh   valera  R      55:06      1 cn155
+             69607      lu48 out_treh   valera  R      55:06      1 cn155
+             69608      lu48 out_treh   valera  R      55:06      1 cn155
+             69609      lu48 out_treh   valera  R      55:06      1 cn155
+             69610      lu48 out_treh   valera  R      55:06      1 cn091
+             69611      lu48 out_treh   valera  R      55:06      1 cn091
+             69612      lu48 out_treh   valera  R      55:06      1 cn091
+             69613      lu48 out_treh   valera  R      55:06      1 cn091
+             69614      lu48 out_treh   valera  R      55:06      1 cn159
+             69615      lu48 out_treh   valera  R      55:06      1 cn159
+             69616      lu48 out_treh   valera  R      55:06      1 cn159
+             69617      lu48 out_treh   valera  R      55:06      1 cn159
+             68636      lu48 out_treh   valera  R 1-21:44:51      1 cn042
+             68637      lu48 out_treh   valera  R 1-21:44:51      1 cn042
+             68638      lu48 out_treh   valera  R 1-21:44:51      1 cn042
+             68639      lu48 out_treh   valera  R 1-21:44:51      1 cn042
+             68641      lu48 out_treh   valera  R 1-21:44:51      1 cn042
+             68281      lu48 job.sbat   valera  R 2-20:09:30      1 cn042
+             69284      lu48     Run2 himani65  R   20:57:28     16 cn[136-145,148-153]
+             69257      lu48  acharya pacharya  R   21:16:53      1 cn159
+             69256      lu48  acharya pacharya  R   21:16:56      1 cn159
+             69255      lu48  acharya pacharya  R   21:16:59      1 cn155
+             69254      lu48  acharya pacharya  R   21:17:02      1 cn155
+             69253      lu48  acharya pacharya  R   21:17:06      1 cn067
+             69252      lu48  acharya pacharya  R   21:17:19      1 cn067
+             68073      lu48 viscE3_m   trulle  R 3-12:38:57      1 cn042
+             68072      lu48 viscE3_m   trulle  R 3-12:39:13      1 cn042
+             68071      lu48 viscE3_m   trulle  R 3-12:39:28      1 cn042
+             68070      lu48 viscE3_m   trulle  R 3-12:40:01      1 cn042
+             65098      lu48 viscE3_m   trulle  R 6-00:25:27      1 cn067
+             65094      lu48 viscE3_m   trulle  R 6-00:27:57      1 cn067
+             65093      lu48 viscE3_m   trulle  R 6-00:28:23      1 cn067
+             65091      lu48 viscE3_m   trulle  R 6-00:29:13      1 cn067
+             65083      lu48 viscE3_m   trulle  R 6-00:31:39      1 cn067
+             65001      lu48      sub      jan  R 6-01:18:21      1 cn034
+             65000      lu48      sub      jan  R 6-01:18:28      1 cn034
+             64999      lu48      sub      jan  R 6-01:18:45      1 cn034
+             64998      lu48      sub      jan  R 6-01:18:56      1 cn034
+             64997      lu48      sub      jan  R 6-01:19:11      1 cn034
+             64996      lu48      sub      jan  R 6-01:19:23      1 cn034
+             64995      lu48      sub      jan  R 6-01:19:34      1 cn034
+             64994      lu48      sub      jan  R 6-01:19:53      1 cn034
+             64993      lu48      sub      jan  R 6-01:20:06      1 cn034
+             69358      lu48  acharya pacharya  R   19:54:15      1 cn123
+             69356      lu48  acharya pacharya  R   19:54:31      1 cn123
+             69303      lu48  acharya pacharya  R   20:27:15      1 cn091
+             67622      lu48      sub      jan  R 5-17:54:42      1 cn034
+             67621      lu48      sub      jan  R 5-17:54:55      1 cn034
+             67620      lu48      sub      jan  R 5-17:55:47      1 cn034
+             67619      lu48      sub      jan  R 5-17:56:08      1 cn034
+             67618      lu48      sub      jan  R 5-17:56:54      1 cn034
+             67617      lu48      sub      jan  R 5-17:57:12      1 cn034
+             67616      lu48      sub      jan  R 5-17:57:25      1 cn034
+             69155      lu48     tsub      jan  R 1-00:24:30      1 cn034
+             69154      lu48     tsub      jan  R 1-00:25:54      1 cn034
+             69479      lu48 pair_cor ielkorde  R   16:08:41      1 cx01
+             69625      lu48 ti-4-Cp-     iria  R      21:43      1 cx01
+             69624      lu48 ru-3-cha     iria  R      25:31      1 cx01
+             69623      lu48 fe-3-cha     iria  R      25:34      1 cx01
+             69618      lu48 fe-3-cha     iria  R      49:17      1 cx01
+             69640      lu48 fe-3-bpy     iria  R       1:23      1 cn024
+             67998      lu48 comsol_s patrisud  R 3-15:08:45      1 cn001
+             69217      lu48    qprod     iria  R   22:42:50      1 cx01
+             69369      lu48 Incap_A7   friale  R   19:45:02      1 cn114
+             69227      lu48 Incap_A6   friale  R   22:34:27      1 cn040
+             69626      lu48 Abq20_bl  leachri  R      21:03      1 cn099
+             68567      lu48 FLUOR-ru     iria  R 1-23:13:04      1 cn081
+             68562      lu48 fe-3-tpy     iria  R 1-23:32:13      1 cn091
+             68625      lu48 fe-3-ext     iria  R 1-22:10:03      1 cn042
+             68564      lu48 ru-3-cha     iria  R 1-23:23:41      1 cn159
+             68563      lu48 fe-3-cha     iria  R 1-23:24:43      1 cn155
+             69083      lu48 FLUOR-ru     iria  R 1-12:18:41      1 cn121
+             68046      lu48 fe-3-cha     iria  R 3-14:01:38      1 cn011
+             68045      lu48 ru-3-cha     iria  R 3-14:01:41      1 cn024
+             68317      lu48 ru-3-cha     iria  R 2-19:01:33      1 cx01
+             69237      lu48    f50v3   agertz  R   22:07:24      3 cn[041,043-044]
+             69207      lu48 f40hires   agertz  R   22:59:27      2 cn[125,127]
+             69163      lu48  f20frac   agertz  R 1-00:13:46      2 cn[063,071]
+             69158      lu48 f20hires   agertz  R 1-00:16:09      2 cn[002,005]
+             54962      lu48 PCPS_H_2  amandae  R 6-13:39:35      4 cn[135,146-147,158]
+             68302      lu48 _interac  aegorov  R 2-19:18:51      2 cn[120-121]
+             68093      lu48 _interac  aegorov  R 3-10:32:28      1 cn004
+             60507      lu48 PCPS_H_1  amandae  R 6-13:19:19      8 cn[161,163-164,166-167,169-171]
+             66008      lu48 Hst3HSPS    osven  R 5-00:44:31      8 cn[064,066,074,076,078-080,084]
+             66007      lu48 Hst3HSPS    osven  R 5-16:01:32      8 cn[087-090,092,102-103,105]
+             66006      lu48 Hst3HSPS    osven  R 5-19:11:38      8 cn[093-098,100-101]
+             69279      lu48   adchem  carlxav  R   21:03:10      2 cn[131-132]
+             67895      lu48  12LAHtz maryam42  R 4-00:13:31      1 cn176
+             67896      lu48  12IA-tz maryam42  R 4-00:13:31      1 cn065
+             67897      lu48  2DLA-tz maryam42  R 4-00:13:31      1 cn068
+             68113      lu48 PCPS_M17  amandae  R 3-02:14:16      8 cn[112-113,115-118,122,124]
+             67894      lu48  11LA-tz maryam42  R 4-01:19:26      1 cn174
+             69495      lu48 rxn_imag   kosala  R   14:40:38      1 cn069
+             67893      lu48  11LtzAH maryam42  R 4-01:41:45      1 cn182
+             67892      lu48   9LtzA- maryam42  R 4-01:43:41      1 cn181
+             67891      lu48   9LtzAH maryam42  R 4-01:44:25      1 cn180
+             67889      lu48  8LDtzA- maryam42  R 4-01:51:37      1 cn178
+             67886      lu48 7LWUbtzA maryam42  R 4-01:55:14      1 cn173
+             67885      lu48 7LWbtzHA maryam42  R 4-01:56:26      1 cn172
+             67884      lu48  6L9tzA- maryam42  R 4-01:59:05      1 cn168
+             67883      lu48  6L9tzAH maryam42  R 4-01:59:28      1 cn014
+             67882      lu48  6L5tzA- maryam42  R 4-02:02:10      1 cn012
+             67881      lu48  6L5tzAH maryam42  R 4-02:02:36      1 cn104
+             67880      lu48 2LbtzNA- maryam42  R 4-02:05:04      1 cn010
+             67879      lu48 2LbtzNAH maryam42  R 4-02:05:50      1 cn110
+             67878      lu48  2HLA-tz maryam42  R 4-02:11:13      1 cn108
+             67877      lu48  2HLAHtz maryam42  R 4-02:11:36      1 cn107
+             67875      lu48  2DLAHtz maryam42  R 4-02:12:20      1 cn086
+             67874      lu48   1LA-tz maryam42  R 4-02:13:15      1 cn077
+             67873      lu48   1LAHtz maryam42  R 4-02:13:53      1 cn052
+             67723      lu48       qp    sonia  R 5-14:13:48      1 cn011
+             67722      lu48       qp    sonia  R 5-14:14:23      1 cn011
+             69492      lu48 q_Qmmm_6   kosala  R   15:18:18      1 cx01
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ squeue -u your[K[K[K[Kyuyang
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ squeue -u yuyang[Kbatch -t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksbatch yuchenhomework5.shexit[Kscancelontrol show jobqueue[Kbatch yuchenhomework5.shqueue[Kcontrol show job[10Pancel[3Pexitsbatch yuchenhomework5.shpwd[Kcode yuchenhomework5.sh[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksbatch yuchenhomework5.shexit[Kscancelontrol show jobqueue[Kbatch yuchenhomework5.sh[16Pcreen -L[6Ppwdcd homework5yuchen[3@mkdir[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcd /home/yuyang/git^[[200~/home/yuyang/git[7P/home/yuyang/gitmkdir homework5yuchen[3Pcd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscreen -Lbatch yuchenhomework5.shqueue[Kcontrol show job[10Pancelontrol show jobqueue[Kbatch yuchenhomework5.sh[16Pcreen -L[6Ppwdcd homework5yuchenpwd[Kscreen -Lbatch yuchenhomework5.shqueue[Kcontrol show job[10Pancel[3Pexitsbatch yuchenhomework5.shpwd[Kcode yuchenhomework5.sh[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-t 1:00:00 yuchenhomework5.shqueue[K -u yuyang[Ksqueue -u yuyang[K[K[K[K[K[K[Kbatch -t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksbatch yuchenhomework5.shexit[Kscancelontrol show jobqueue[Kbatch yuchenhomework5.sh[16Pcreen -L[K[yuyang@cosmos1 homework5yuchen]$ screen -L[K[yuyang@cosmos1 homework5yuchen]$ screen -L[6Ppwdcd homework5yuchen[3@mkdir[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcd /home/yuyang/git^[[200~/home/yuyang/gitpwd[Kexitsqueueequeuebatch yuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-solution.sh[11Pcode yuchenhomework5.shpwd[Kcd ../[3Ppwdgit push origincommit -m 'add NEW completed homework4.sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Padd homework4.shcommit -m 'add NEW completed homework4.sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush origin[Kpwd[Kcd ../[3Ppwdcode yuchenhomework5.shsbatch yuchenhomework5-solution.sh.sh[K[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cequeue[K[1Pqueue[2Pexit[1Ppwdcd ^[[200~/home/yuyang/git[7P/home/yuyang/gitmkdir homework5yuchen[3Pcd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscreen -Lbatch yuchenhomework5.shqueue[Kcontrol show job[10Pancel[3Pexitsbatch yuchenhomework5.shpwd[Kcode yuchenhomework5.sh[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-t 1:00:00 yuchenhomework5.shqueue[K -u [Ksqueue -u [Kbatch -t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksbatch yuchenhomework5.shexit[Kscancelontrol show job[10Pancel[3Pexitsbatch yuchenhomework5.shpwd[Kcode yuchenhomework5.sh[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-t 1:00:00 yuchenhomework5.shqueue[K -u [K[Asqueue -u [Kbatch -t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksbatch yuchenhomework5.shexit[Kscancelontrol show jobqueue[Kbatch yuchenhomework5.sh[16Pcreen -L[6Ppwdscreen -Lbatch yuchenhomework5.shqueue[Kcontrol show job[10Pancel[3Pexitsbatch yuchenhomework5.shpwd[Kcode yuchenhomework5.sh[2@sbatch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-t 1:00:00 yuchenhomework5.shqueue[K -u [A[Ksqueue -u [Kbatch -t 1:00:00 yuchenhomework5.sh[11Pyuchenhomework5.sh[2Pcode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksqueue -y[Ku yuyang[K[K[K[Kchenhomework5
+[?2004lsqueue: error: Invalid user: yuchenhomework5
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ exit
+[?2004lexit
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ sbatch yuchenhomework5.[K.sh
+[?2004lSubmitted batch job 69915
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ squeue
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             69760   gpua100 run_job.   najmeh PD       0:00      2 (Resources)
+             69759   gpua100 run_job.   najmeh  R    4:09:09      2 cg[11-12]
+             69758   gpua100 run_job.   najmeh  R    4:09:12      2 cg[09-10]
+             69726   gpua100 run_job.   najmeh  R    5:37:00      2 cg[07-08]
+             67806  gpua100i SO33_441     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67807  gpua100i SO51_551     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69792  gpua100i run.gpua     vivy  R    2:49:30      1 cg20
+             69836    gpua40     lhpc    xueli  R    1:49:39      1 cg01
+             69633    gpua40     lhpc an4255da  R    7:59:50      1 cg01
+             69724    gpua40 run_job.   najmeh  R    5:37:19      2 cg[04-05]
+             69723    gpua40 run_job.   najmeh  R    5:37:23      2 cg[02-03]
+             67805   gpua40i SO19_331     hlhh PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67769   gpua40i  SO3_111     hlhh  R 3-22:04:55      1 cg16
+             67768   gpua40i SO17_334     hlhh  R 4-08:42:35      1 cg15
+             67767   gpua40i SO17_223     hlhh  R 5-07:27:24      1 cg17
+             69900      lu48 R08S48A0   szrobi PD       0:00      2 (ReqNodeNotAvail, Reserved for maintenance)
+             69140      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69141      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69142      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69143      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69147      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69149      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69150      lu48      sub      jan PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69200      lu48 guess_ap    veiko PD       0:00      1 (Dependency)
+             69198      lu48 guess_ap    veiko PD       0:00      1 (Dependency)
+             69506      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69504      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69184      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             66009      lu48 Hst3HSPS    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66010      lu48 Hst3HSPS    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66011      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66012      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             66013      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             67909      lu48 7LUbtzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67911      lu48  c1LAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67912      lu48  c1LA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67913      lu48 c2HLAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67914      lu48 c2HLA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67915      lu48 c2DLAHtz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67916      lu48 c2DLA-tz maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67917      lu48 c2LbtzNA maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67918      lu48 c2LbtzNA maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67946      lu48 c6L5tzAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67947      lu48 c6L5tzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67948      lu48 c6L9tzAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67949      lu48 c6L9tzA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67952      lu48  c7LWHAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67954      lu48  c7LWHA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67955      lu48  c7LWUAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67956      lu48   c7LUA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67957      lu48   c7LMAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67958      lu48   c7LMA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67959      lu48    c9LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67960      lu48    c9LA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67961      lu48   c11LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67962      lu48   c11LA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67963      lu48   c12LAH maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             67964      lu48   c12IA- maryam42 PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68139      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68140      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68141      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68142      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68143      lu48 spam_tes falvlima PD       0:00      4 (ReqNodeNotAvail, Reserved for maintenance)
+             68124      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68125      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68126      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68127      lu48 PCPS_M17  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68128      lu48 PCPS_H_3  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68129      lu48 PCPS_H_4  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68130      lu48 PCPS_H_5  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             68149      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             68150      lu48 Hst3HSPC    osven PD       0:00      8 (AssocGrpCpuLimit)
+             68787      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68790      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             68792      lu48 runN4Alp     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69480      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69481      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69482      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69483      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69484      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69485      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69486      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69489      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69490      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69491      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69493      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69494      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69827      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69828      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69829      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69853      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69857      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69860      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69873      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69875      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69876      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69878      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69879      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69901      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69903      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69904      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69905      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69906      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69907      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69910      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69911      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69914      lu48 runConve     lila PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69738      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69739      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69740      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69741      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69742      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69743      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69744      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69745      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69746      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69747      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69748      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69749      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69750      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69751      lu48        q marlisah PD       0:00      1 (ReqNodeNotAvail, Reserved for maintenance)
+             69915      lu48 yuchen_h   yuyang  R       0:08      1 cn039
+             69488      lu48 _interac gmonteil  R   23:17:22      1 cn070
+             69581      lu48 _interac gmonteil  R   16:55:19      1 cn162
+             69898      lu48 lumia_te   yvilla  R      34:26      1 cn138
+             69871      lu48 splice25  anatole  R    1:16:12      1 cn099
+             69151      lu48     Cool an8583so  R 1-08:21:29      3 cn[154,156-157]
+             69159      lu48 f60hires   agertz  R 1-08:09:00      2 cn[006,008]
+             69647      lu48  run_EAP    dhard  R    7:50:40      1 cn106
+             69638      lu48  run_EAP    dhard  R    7:55:25      1 cn106
+             69199      lu48    guess    veiko  R 1-07:08:26      1 cn126
+             69197      lu48    guess    veiko  R 1-07:08:42      1 cn179
+             68636      lu48 out_treh   valera  R 2-05:38:20      1 cn042
+             68637      lu48 out_treh   valera  R 2-05:38:20      1 cn042
+             68638      lu48 out_treh   valera  R 2-05:38:20      1 cn042
+             68639      lu48 out_treh   valera  R 2-05:38:20      1 cn042
+             68641      lu48 out_treh   valera  R 2-05:38:20      1 cn042
+             68281      lu48 job.sbat   valera  R 3-04:02:59      1 cn042
+             68073      lu48 viscE3_m   trulle  R 3-20:32:26      1 cn042
+             68072      lu48 viscE3_m   trulle  R 3-20:32:42      1 cn042
+             68071      lu48 viscE3_m   trulle  R 3-20:32:57      1 cn042
+             68070      lu48 viscE3_m   trulle  R 3-20:33:30      1 cn042
+             69913      lu48 r3_176bu   terols  R       8:36      1 cn063
+             65098      lu48 viscE3_m   trulle  R 6-08:18:56      1 cn067
+             65094      lu48 viscE3_m   trulle  R 6-08:21:26      1 cn067
+             65093      lu48 viscE3_m   trulle  R 6-08:21:52      1 cn067
+             65091      lu48 viscE3_m   trulle  R 6-08:22:42      1 cn067
+             65083      lu48 viscE3_m   trulle  R 6-08:25:08      1 cn067
+             65001      lu48      sub      jan  R 6-09:11:50      1 cn034
+             65000      lu48      sub      jan  R 6-09:11:57      1 cn034
+             64999      lu48      sub      jan  R 6-09:12:14      1 cn034
+             64998      lu48      sub      jan  R 6-09:12:25      1 cn034
+             64997      lu48      sub      jan  R 6-09:12:40      1 cn034
+             64996      lu48      sub      jan  R 6-09:12:52      1 cn034
+             64995      lu48      sub      jan  R 6-09:13:03      1 cn034
+             64994      lu48      sub      jan  R 6-09:13:22      1 cn034
+             64993      lu48      sub      jan  R 6-09:13:35      1 cn034
+             69356      lu48  acharya pacharya  R 1-03:48:00      1 cn123
+             69303      lu48  acharya pacharya  R 1-04:20:44      1 cn091
+             67622      lu48      sub      jan  R 6-01:48:11      1 cn034
+             67621      lu48      sub      jan  R 6-01:48:24      1 cn034
+             67620      lu48      sub      jan  R 6-01:49:16      1 cn034
+             67619      lu48      sub      jan  R 6-01:49:37      1 cn034
+             67618      lu48      sub      jan  R 6-01:50:23      1 cn034
+             67617      lu48      sub      jan  R 6-01:50:41      1 cn034
+             67616      lu48      sub      jan  R 6-01:50:54      1 cn034
+             69155      lu48     tsub      jan  R 1-08:17:59      1 cn034
+             69154      lu48     tsub      jan  R 1-08:19:23      1 cn034
+             69650      lu48 ti-4-Cp-     iria  R    7:48:48      1 cn081
+             69625      lu48 ti-4-Cp-     iria  R    8:15:12      1 cx01
+             69624      lu48 ru-3-cha     iria  R    8:19:00      1 cx01
+             69623      lu48 fe-3-cha     iria  R    8:19:03      1 cx01
+             69618      lu48 fe-3-cha     iria  R    8:42:46      1 cx01
+             69640      lu48 fe-3-bpy     iria  R    7:54:52      1 cn024
+             67998      lu48 comsol_s patrisud  R 3-23:02:14      1 cn001
+             69217      lu48    qprod     iria  R 1-06:36:19      1 cx01
+             69369      lu48 Incap_A7   friale  R 1-03:38:31      1 cn114
+             69227      lu48 Incap_A6   friale  R 1-06:27:56      1 cn040
+             68567      lu48 FLUOR-ru     iria  R 2-07:06:33      1 cn081
+             68562      lu48 fe-3-tpy     iria  R 2-07:25:42      1 cn091
+             68625      lu48 fe-3-ext     iria  R 2-06:03:32      1 cn042
+             68564      lu48 ru-3-cha     iria  R 2-07:17:10      1 cn159
+             68563      lu48 fe-3-cha     iria  R 2-07:18:12      1 cn155
+             69083      lu48 FLUOR-ru     iria  R 1-20:12:10      1 cn121
+             68046      lu48 fe-3-cha     iria  R 3-21:55:07      1 cn011
+             68045      lu48 ru-3-cha     iria  R 3-21:55:10      1 cn024
+             68317      lu48 ru-3-cha     iria  R 3-02:55:02      1 cx01
+             69237      lu48    f50v3   agertz  R 1-06:00:53      3 cn[041,043-044]
+             69207      lu48 f40hires   agertz  R 1-06:52:56      2 cn[125,127]
+             69158      lu48 f20hires   agertz  R 1-08:09:38      2 cn[002,005]
+             69737      lu48     Run2 himani65  R    5:08:22     16 cn[045-051,053,055-062]
+             69780      lu48       kk     iria  R    1:29:13      8 cn[111,120-121,123,129-132]
+             69682      lu48  acharya pacharya  R    6:50:55      1 cn165
+             69681      lu48  acharya pacharya  R    6:54:43      1 cn165
+             69680      lu48  acharya pacharya  R    6:54:46      1 cn160
+             69679      lu48  acharya pacharya  R    6:54:49      1 cn160
+             69678      lu48  acharya pacharya  R    6:54:52      1 cn013
+             69677      lu48  acharya pacharya  R    6:54:56      1 cn013
+             69676      lu48  acharya pacharya  R    6:54:59      1 cn009
+             69675      lu48  acharya pacharya  R    6:55:02      1 cn009
+             69674      lu48  acharya pacharya  R    6:55:15      1 cn007
+             69673      lu48  acharya pacharya  R    6:55:41      1 cn007
+             69672      lu48  acharya pacharya  R    6:55:44      1 cn106
+             69671      lu48  acharya pacharya  R    6:55:48      1 cn034
+             69670      lu48  acharya pacharya  R    6:55:52      1 cn003
+             69669      lu48  acharya pacharya  R    6:56:05      1 cn003
+             69855      lu48  TS_3-21     iria  R    1:36:46      1 cn155
+             54962      lu48 PCPS_H_2  amandae  R 6-21:33:04      4 cn[135,146-147,158]
+             69811      lu48 pr_l3ang  zakiyeh  R    2:40:03      1 cn034
+             69812      lu48 pr_l3ang  zakiyeh  R    2:40:03      1 cn034
+             69810      lu48 pr_l3ang  zakiyeh  R    2:40:06      1 cn034
+             69809      lu48 pr_l3ang  zakiyeh  R    2:40:09      1 cn034
+             69798      lu48 pr_l3ang  zakiyeh  R    2:40:12      1 cn034
+             69797      lu48 pr_l3ang  zakiyeh  R    2:40:15      1 cn034
+             69890      lu48 pr_l3ang  zakiyeh  R      51:00      1 cn034
+             69889      lu48 pr_l3ang  zakiyeh  R      51:02      1 cn067
+             69888      lu48 pr_l3ang  zakiyeh  R      51:05      1 cn067
+             69887      lu48 pr_l3ang  zakiyeh  R      51:08      1 cn034
+             69886      lu48 pr_l3ang  zakiyeh  R      51:11      1 cn034
+             69885      lu48 pr_l3ang  zakiyeh  R      51:15      1 cn034
+             68302      lu48 _interac  aegorov  R 3-03:12:20      2 cn[120-121]
+             68093      lu48 _interac  aegorov  R 3-18:25:57      1 cn004
+             60507      lu48 PCPS_H_1  amandae  R 6-21:12:48      8 cn[161,163-164,166-167,169-171]
+             66008      lu48 Hst3HSPS    osven  R 5-08:38:00      8 cn[064,066,074,076,078-080,084]
+           69843_1      lu48    Dyn_5 mkoushik  R    1:47:54      1 cn039
+           69845_1      lu48    Dyn_7 mkoushik  R    1:47:54      1 cn039
+           69846_1      lu48    Dyn_8 mkoushik  R    1:47:54      1 cn039
+           69839_1      lu48    Dyn_1 mkoushik  R    1:47:57      1 cn039
+           69840_1      lu48    Dyn_2 mkoushik  R    1:47:57      1 cn039
+           69842_1      lu48    Dyn_4 mkoushik  R    1:47:57      1 cn039
+             66007      lu48 Hst3HSPS    osven  R 5-23:55:01      8 cn[087-090,092,102-103,105]
+             66006      lu48 Hst3HSPS    osven  R 6-03:05:07      8 cn[093-098,100-101]
+             67895      lu48  12LAHtz maryam42  R 4-08:07:00      1 cn176
+             67896      lu48  12IA-tz maryam42  R 4-08:07:00      1 cn065
+             67897      lu48  2DLA-tz maryam42  R 4-08:07:00      1 cn068
+             68113      lu48 PCPS_M17  amandae  R 3-10:07:45      8 cn[112-113,115-118,122,124]
+             67894      lu48  11LA-tz maryam42  R 4-09:12:55      1 cn174
+             69902      lu48 rxn_imag   kosala  R      24:18      1 cn134
+             69874      lu48 rxn_imag   kosala  R    1:14:04      1 cn016
+             69870      lu48 rxn_imag   kosala  R    1:17:25      1 cn133
+             69912      lu48 run.auro     vivy  R       8:07      1 cn069
+             69908      lu48 run.auro     vivy  R      16:54      1 cn177
+             69754      lu48 run.auro     vivy  R    4:54:30      1 cn136
+             67893      lu48  11LtzAH maryam42  R 4-09:35:14      1 cn182
+             67892      lu48   9LtzA- maryam42  R 4-09:37:10      1 cn181
+             67891      lu48   9LtzAH maryam42  R 4-09:37:54      1 cn180
+             67889      lu48  8LDtzA- maryam42  R 4-09:45:06      1 cn178
+             67886      lu48 7LWUbtzA maryam42  R 4-09:48:43      1 cn173
+             67885      lu48 7LWbtzHA maryam42  R 4-09:49:55      1 cn172
+             67884      lu48  6L9tzA- maryam42  R 4-09:52:34      1 cn168
+             67883      lu48  6L9tzAH maryam42  R 4-09:52:57      1 cn014
+             67882      lu48  6L5tzA- maryam42  R 4-09:55:39      1 cn012
+             67881      lu48  6L5tzAH maryam42  R 4-09:56:05      1 cn104
+             67880      lu48 2LbtzNA- maryam42  R 4-09:58:33      1 cn010
+             67879      lu48 2LbtzNAH maryam42  R 4-09:59:19      1 cn110
+             67878      lu48  2HLA-tz maryam42  R 4-10:04:42      1 cn108
+             67877      lu48  2HLAHtz maryam42  R 4-10:05:05      1 cn107
+             67875      lu48  2DLAHtz maryam42  R 4-10:05:49      1 cn086
+             67874      lu48   1LA-tz maryam42  R 4-10:06:44      1 cn077
+             67873      lu48   1LAHtz maryam42  R 4-10:07:22      1 cn052
+             67723      lu48       qp    sonia  R 5-22:07:17      1 cn011
+             67722      lu48       qp    sonia  R 5-22:07:52      1 cn011
+             69492      lu48 q_Qmmm_6   kosala  R   23:11:47      1 cx01
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ squeuebatch yuchenhomework5.shexit[Ksbatch master.shpwd[Ksbatch my_taskfarm/master.sh[14Pcode worker.shmaster.shd /home/yuyang/git/homework5yuchen/my_taskfarm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccode master.shp /projects/hep/fs10/mnxb11/tutorial5/master.sh /projects/hep/fs10/mnxb11/tutorial5/worker.sh my_taskfarm/[A[29Pmkdir my_taskfarm
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscreen[3Ppwdmkdir my_taskfarmcp /projects/hep/fs10/mnxb11/tutorial5/master.sh /projects/hep/fs10/mnxb11/tutorial5/worker.sh my_taskfarm/[Aode master.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcd /home/yuyang/git/homework5yuchen/my_taskfarm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Code master.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cworker.shsbatch my_taskfarm/master.shpwd[Ksbatch master.shexit[Ksbatch yuchenhomework5.shqueue[K[Ksqueue [K -u yuyang
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             69915      lu48 yuchen_h   yuyang  R       0:24      1 cn039
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ scontrol show job 69916[K5
+[?2004lJobId=69915 JobName=yuchen_hw5_job
+   UserId=yuyang(32225) GroupId=mnxb11(32200) MCS_label=N/A
+   Priority=68056 Nice=0 Account=lu2023-7-4 QOS=normal
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:30 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2023-09-21T17:18:29 EligibleTime=2023-09-21T17:18:29
+   AccrueTime=2023-09-21T17:18:29
+   StartTime=2023-09-21T17:18:30 EndTime=2023-09-21T17:19:00 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-09-21T17:18:30 Scheduler=Main
+   Partition=lu48 AllocNode:Sid=cosmos1:2154170
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cn039
+   BatchHost=cn039
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=1,mem=5300M,node=1,billing=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=5300M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/yuyang/git/homework5yuchen/yuchenhomework5.sh
+   WorkDir=/home/yuyang/git/homework5yuchen
+   StdErr=/home/yuyang/git/homework5yuchen/yuchen_hw5_job_69915.err
+   StdIn=/dev/null
+   StdOut=/home/yuyang/git/homework5yuchen/yuchen_hw5_job_69915.out
+   Power=
+   
+
+kyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ scontrol show job 69915[7Pqueue -u yuyang[Kbatch yuchenhomework5.shexit[Ksbatch master.shpwd[Ksbatch my_taskfarm/master.sh[14Pcode worker.shmaster.shd /home/yuyang/git/homework5yuchen/my_taskfarm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccode master.shp /projects/hep/fs10/mnxb11/tutorial5/master.sh /projects/hep/fs10/mnxb11/tutorial5/worker.sh my_taskfarm/[A[29Pmkdir my_taskfarm
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscreen[3Ppwdscreen[3Ppwdmkdir my_taskfarmcp /projects/hep/fs10/mnxb11/tutorial5/master.sh /projects/hep/fs10/mnxb11/tutorial5/worker.sh my_taskfarm/[Aode master.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcd /home/yuyang/git/homework5yuchen/my_taskfarm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Code master.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cworker.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscancel job[K[K[K69915
+[?2004lkyuyang@cosmos1:~/git/homework5yuchen\[?2004h[yuyang@cosmos1 homework5yuchen]$ exit
+[?2004lexit
